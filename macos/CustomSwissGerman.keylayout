@@ -8,7 +8,7 @@
 
 -->
 <!--Last edited by Ukelele version 375 on 2024-01-28 at 18:20 (CET)-->
-<keyboard group="126" id="-29390" name="Russian Swiss Symbols Keyboard Layout" maxout="1">
+<keyboard group="126" id="-29390" name="Custom Swiss German" maxout="1">
     <layouts>
         <layout first="0" last="0" mapSet="138" modifiers="30"/>
     </layouts>
