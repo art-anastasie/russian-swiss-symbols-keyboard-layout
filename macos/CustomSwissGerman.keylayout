@@ -66,7 +66,7 @@
             <key code="7" output="ч"/>
             <key code="8" output="с"/>
             <key code="9" output="м"/>
-            <key code="10" output=";"/>
+            <key code="10" output=":"/>
             <key code="11" output="и"/>
             <key code="12" output="й"/>
             <key code="13" output="ц"/>
@@ -100,7 +100,7 @@
             <key code="41" output="ж"/>
             <key code="42" output="$"/>
             <key code="43" output="б"/>
-            <key code="44" output="_"/>
+            <key code="44" output="."/>
             <key code="45" action="a7"/>
             <key code="46" output="ь"/>
             <key code="47" output="ю"/>
@@ -178,7 +178,7 @@
             <key code="7" output="Ч"/>
             <key code="8" output="С"/>
             <key code="9" output="М"/>
-            <key code="10" output=":"/>
+            <key code="10" output=";"/>
             <key code="11" output="И"/>
             <key code="12" output="Й"/>
             <key code="13" output="Ц"/>
@@ -211,11 +211,11 @@
             <key code="40" output="Л"/>
             <key code="41" output="Ж"/>
             <key code="42" output="Ъ"/>
-            <key code="43" output=";"/>
-            <key code="44" output="_"/>
+            <key code="43" output="Б"/>
+            <key code="44" output=","/>
             <key code="45" action="a16"/>
             <key code="46" output="Ь"/>
-            <key code="47" output=":"/>
+            <key code="47" output="Ю"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" action="a0"/>
             <key code="50" output="&#x003E;"/>
@@ -223,7 +223,7 @@
             <key code="52" output="&#x0003;"/>
             <key code="53" output="&#x001B;"/>
             <key code="64" output="&#x0010;"/>
-            <key code="65" output="б"/>
+            <key code="65" output="Б"/>
             <key code="66" output="*"/>
             <key code="67" output="*"/>
             <key code="69" output="+"/>
@@ -1108,7 +1108,7 @@
             <when state="5" output="Ш"/>
         </action>
         <action id="a16">
-            <when state="none" output="т"/>
+            <when state="none" output="Т"/>
             <when state="4" output="Т"/>
         </action>
         <action id="a17">
