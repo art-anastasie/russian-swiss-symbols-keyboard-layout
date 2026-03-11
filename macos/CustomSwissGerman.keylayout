@@ -1086,7 +1086,7 @@
             <when state="none" next="2"/>
         </action>
         <action id="a13">
-            <when state="none" output="ф"/>
+            <when state="none" output="Ф"/>
             <when state="1" output="Ф"/>
             <when state="2" output="Ф"/>
             <when state="3" output="Ф"/>
@@ -1094,14 +1094,14 @@
             <when state="5" output="Ф"/>
         </action>
         <action id="a14">
-            <when state="none" output="у"/>
+            <when state="none" output="У"/>
             <when state="1" output="У"/>
             <when state="2" output="У"/>
             <when state="3" output="У"/>
-            <when state="5" output="У"/>
+            <when state="5" output="У"/>У
         </action>
         <action id="a15">
-            <when state="none" output="ш"/>
+            <when state="none" output="Ш"/>
             <when state="1" output="Ш"/>
             <when state="2" output="Ш"/>
             <when state="3" output="Ш"/>
@@ -1112,7 +1112,7 @@
             <when state="4" output="Т"/>
         </action>
         <action id="a17">
-            <when state="none" output="щ"/>
+            <when state="none" output="Щ"/>
             <when state="1" output="Щ"/>
             <when state="2" output="Щ"/>
             <when state="3" output="Щ"/>
@@ -1120,7 +1120,7 @@
             <when state="5" output="Щ"/>
         </action>
         <action id="a18">
-            <when state="none" output="г"/>
+            <when state="none" output="Г"/>
             <when state="1" output="Г"/>
             <when state="2" output="Г"/>
             <when state="3" output="Г"/>
@@ -1139,21 +1139,21 @@
         <action id="a4">
             <when state="none" output="ф"/>
             <when state="1" output="Ф"/>
-            <when state="2" output="Ф"/>
-            <when state="3" output="Ф"/>
-            <when state="4" output="Ф"/>
-            <when state="5" output="Ф"/>
+            <when state="2" output="ф"/>
+            <when state="3" output="ф"/>
+            <when state="4" output="ф"/>
+            <when state="5" output="ф"/>
         </action>
         <action id="a5">
             <when state="none" output="у"/>
             <when state="1" output="У"/>
-            <when state="2" output="У"/>
-            <when state="3" output="У"/>
-            <when state="5" output="У"/>
+            <when state="2" output="у"/>
+            <when state="3" output="у"/>
+            <when state="5" output="у"/>
         </action>
         <action id="a6">
             <when state="none" output="ш"/>
-            <when state="1" output="ш"/>
+            <when state="1" output="Ш"/>
             <when state="2" output="ш"/>
             <when state="3" output="ш"/>
             <when state="5" output="ш"/>
@@ -1164,7 +1164,7 @@
         </action>
         <action id="a8">
             <when state="none" output="щ"/>
-            <when state="1" output="щ"/>
+            <when state="1" output="Щ"/>
             <when state="2" output="щ"/>
             <when state="3" output="щ"/>
             <when state="4" output="щ"/>
@@ -1172,7 +1172,7 @@
         </action>
         <action id="a9">
             <when state="none" output="г"/>
-            <when state="1" output="г"/>
+            <when state="1" output="Г"/>
             <when state="2" output="г"/>
             <when state="3" output="г"/>
             <when state="5" output="г"/>
