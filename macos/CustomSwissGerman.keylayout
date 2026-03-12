@@ -14,13 +14,13 @@
     </layouts>
     <modifierMap id="30" defaultIndex="0">
 
-	<keyMapSelect mapIndex="6">
-    	<modifier keys="command"/>
-	</keyMapSelect>
+    <keyMapSelect mapIndex="0">
+        <modifier keys="anyCommand"/>
+    </keyMapSelect>
 
-	<keyMapSelect mapIndex="1">
-    	<modifier keys="anyShift caps?"/>
-	</keyMapSelect>
+    <keyMapSelect mapIndex="1">
+        <modifier keys="anyShift caps?"/>
+    </keyMapSelect>
 
     <keyMapSelect mapIndex="2">
         <modifier keys="caps command?"/>
