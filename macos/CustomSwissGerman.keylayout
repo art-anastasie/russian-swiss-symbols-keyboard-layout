@@ -15,7 +15,7 @@
     <modifierMap id="30" defaultIndex="0">
 
     <keyMapSelect mapIndex="0">
-        <modifier keys="anyCommand"/>
+        <modifier keys="command"/>
     </keyMapSelect>
 
     <keyMapSelect mapIndex="1">
