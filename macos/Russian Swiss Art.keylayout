@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 
-<keyboard group="126" id="29390" name="Russian Swiss Art" maxout="1">
+<keyboard group="126" id="29390" name="Custom Swiss German" maxout="1">
     <layouts>
         <layout first="0" last="0" mapSet="138" modifiers="30"/>
     </layouts>
@@ -304,7 +304,7 @@
             <key code="27" output="&#x0027;"/>
             <key code="28" output="8"/>
             <key code="29" output="0"/>
-            <key code="30" action="a1"/>
+            <key code="30" output="Ъ"/>
             <key code="31" action="a17"/>
             <key code="32" action="a18"/>
             <key code="33" output="Х"/>
@@ -317,14 +317,14 @@
             <key code="40" output="Л"/>
             <key code="41" output="Ж"/>
             <key code="42" output="$"/>
-            <key code="43" output="б"/>
-            <key code="44" output="_"/>
+            <key code="43" output="Б"/>
+            <key code="44" output="."/>
             <key code="45" action="a16"/>
             <key code="46" output="Ь"/>
             <key code="47" output="Ю"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" action="a0"/>
-            <key code="50" output=";"/>
+            <key code="50" output="&#x003C;"/>
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
             <key code="53" output="&#x001B;"/>
