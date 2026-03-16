@@ -19,6 +19,7 @@ Custom keyboard layout based on the Logitech Swiss German keyboard layout.
 1. Log out of macOS and log in again
 1. Go to **_System Preferences > Keyboard > Text Input > Edit... > [+] > Others_**
 1. Locate the **Custom Swiss German** keyboard layout in the list and add it
+1. Reboot 
 
 ### Windows
 
@@ -29,12 +30,20 @@ Custom keyboard layout based on the Logitech Swiss German keyboard layout.
 To install the keyboard layout, you must build a setup package from the [`CustomSw.klc`](windows/CustomSw.klc) file and then install this package:
 
 1. Download and install the [Microsoft Keyboard Layout Creator (MSKLC)](https://www.microsoft.com/en-us/download/details.aspx?id=102134)
-1. Download the [`CustomSw.klc`](windows/CustomSw.klc) file
-1. In MSKLC, go to _**File > Load Source File...**_ and select the `CustomSw.klc` file
+1. Download the [`RUCH.klc`](windows/RUCH.klc) file
+1. In MSKLC, go to _**File > Load Source File...**_ and select the `RUCH.klc` file
 1. Click on _**Project > Build DLL and Setup Package**_
-   > This creates a directory called `customsw` in the current working directory. There may be a dialog notifying about warnings during the build which can be ignored.
+   > This creates a directory called `RUCH` in the current working directory. There may be a dialog notifying about warnings during the build which can be ignored.
 1. Run `setup.exe` in the `customsw` directory
-   >  This installs the keyboard layout as `CustomSw.dll` to `C:\Windows\System32` and creates the necessary registry entries to make the layout available to the system. If `setup.exe` doesn't work for some reason, try executing `CustomSw_amd64.msi`.
+   >  This installs the keyboard layout as `RUCH.dll` to `C:\Windows\System32` and creates the necessary registry entries to make the layout available to the system. If `setup.exe` doesn't work for some reason, try executing `CustomSw_amd64.msi`. If you get error 1625:
+   - Open Windows Security
+   - Go to App & browser control
+   - Open Smart App Control settings
+   - Turn Smart App Control to Off
+   - Reboot
+
+Run your setup.exe again as administrator
+
 1. In Windows, go to **_Settings > Time & Language > Language > Keyboard > Override for default input method_** and activate the **Custom Swiss German** keyboard layout
 
 > **Important:** after the installation, keep the `customsw` directory somewhere on the system. This is because the contained `setup.exe` file allows to cleanly uninstall the keyboard layout. Uninstallation is necessary if you want to make changes to the keyboard layout (i.e. by editing the `.klc` file and rebuilding the DLL and setup package as described above) and then reapply it. The reason that the keyboard layout must be uninstalled before making changes is that MSKLC refuses to export a keyboard layout with the same name as an already installed keyboard layout.
@@ -72,33 +81,4 @@ Generated from `LogitechSwissGerman.keylayout` as explained in [Windows keyboard
 
 ### Windows keyboard layout file generation
 
-The following explains how to generate the `CustomSw.klc` file from `CustomSwissGerman.keylayout`:
 
-1. Clone [adobe-type-tools/keyboard-layouts](https://github.com/adobe-type-tools/keyboard-layouts):
-   ```bash
-   git clone https://github.com/adobe-type-tools/keyboard-layouts
-   ```
-1. Execute the following command:
-    ```bash
-    python3 mac2winKeyboard.py CustomSwissGerman.keylayout
-    ```
-1. Do the following manual fixes in the created `CustomSw.klc` file:
-   1. Change the line:
-      ```bash
-      29  OEM_3		SGCap	003c	003e	-1	-1	005c	2030	// LESS-THAN SIGN, GREATER-THAN SIGN, <none>, <none>, REVERSE SOLIDUS, PER MILLE SIGN
-      ```
-      to:
-      ```bash
-      29  OEM_3		SGCap	00a7	00b0	-1	-1	2264	2265	// SECTION SIGN, DEGREE SIGN, <none>, <none>, LESS-THAN OR EQUAL TO, GREATER-THAN OR EQUAL TO
-      ```
-   1. Change the line:
-      ```bash
-      56  OEM_102		0	00a7	00b0	-1	-1	2264	2265	// SECTION SIGN, DEGREE SIGN, <none>, <none>, LESS-THAN OR EQUAL TO, GREATER-THAN OR EQUAL TO
-      ```
-      to:
-      ```bash
-      56  OEM_102		0	003c	003e	-1	-1	005c	2030	// LESS-THAN SIGN, GREATER-THAN SIGN, <none>, <none>, REVERSE SOLIDUS, PER MILLE SIGN
-      ```
-    The above fixes are necessary because the `OEM_3` key (`§ `/`/`/`°`) and `OEM_102` key (`<`/`/`/`>`) seem to be swapped on macOS keyboards with respect to Windows keyboards.
-is 
-> **Note:** keyboard layout file names on Windows can have at most 8 characters (excluding the extension). That's why the name of the output file is shortened to `CustomSw.klc`.
