@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 
-<keyboard group="126" id="29390" name="Russian Swiss Symbols Layout" maxout="1">
+<keyboard group="126" id="29390" name="Russian Swiss Symbols" maxout="1">
     <layouts>
         <layout first="0" last="0" mapSet="138" modifiers="30"/>
     </layouts>
